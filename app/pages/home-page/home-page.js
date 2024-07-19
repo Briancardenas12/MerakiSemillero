@@ -16,6 +16,64 @@ class HomePage extends CellsPage {
     };
   }
 
+  static get styles() {
+    return css`
+      .container {
+        padding: 16px;
+        background-image: url('https://example.com/your-background-image.jpg'); /* Reemplaza con la URL de tu imagen de fondo */
+        background-size: cover;
+        background-position: center;
+      }
+      .pokemon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 16px 0;
+      }
+      .pokemon-card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 16px;
+        background-color: #f3f3f3; /* Color de fondo de la tarjeta */
+        border: 1px solid #ccc; /* Borde de la tarjeta */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+      }
+      .pokemon-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 16px;
+      }
+      .pokemon-name {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .pokemon-weight {
+        margin-bottom: 8px;
+      }
+      .pokemon-type span {
+        margin-right: 8px;
+        background-color: #ffeb3b; /* Color de fondo del tipo de Pokémon */
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      .evolutions-button {
+        margin-top: 8px;
+      }
+      h3 {
+        color: #333;
+        text-align: center;
+      }
+    `;
+  }
+
   constructor() {
     super();
     this.title = 'Taller 1 Páginas Declarativas';
